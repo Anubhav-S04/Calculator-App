@@ -12,25 +12,25 @@ function logichandler() {
     }
     else if (this.innerText === "=") {
         try {
-            displaytext = eval(displaytext); // evaluate expression
+            displaytext = eval(displaytext); 
             display();
             
         } catch (error) {
-            displaytext = "Error"; // handle evaluation error
+            displaytext = "Error"; 
         }
     } else if (this.innerText === "<=") {
         displaytext = displaytext.slice(0, -1);
         display();
     } else {
-        displaytext += this.innerText; // append clicked button text
+        displaytext += this.innerText; 
         display();
     }
 }
 
-// Get all buttons
+
 let buttons = document.getElementsByClassName("button");
 
-// Add event listener to each button
+
 for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener("click", logichandler);
 }
