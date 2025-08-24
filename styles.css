@@ -14,15 +14,16 @@ h1{
     
     font-family: 'Arial', sans-serif;
     color: #1965a7;
+    padding: 10px;
 }
 .calculator{
     display: flex;
     flex-direction: column;
     width: 300px;
-    gap: 10px;
+    /* gap: 10px; */
 }
 .display{
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     padding-right: 20px;
     padding-top: 10px;
     font-size: 24px;
@@ -36,13 +37,24 @@ h1{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
+    background-color: rgb(41, 41, 41);
+    padding: 10px;
+    color: rgb(255, 255, 255);
+   
 
 }
 .button{
-    padding: 20px;
+    padding: 18px;
     font-size: 1.5em;
-    background-color: #c2c5c7;
+    background-color: #5e5e5e;
     border: none;
     cursor: pointer;
     text-align: center;
+    border-radius: 25px;
+}
+.bgyellow{
+    background-color: #fdb817;
+}
+.bglightgrey{
+    background-color: #a6a6a6;
 }
